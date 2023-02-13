@@ -394,7 +394,7 @@ function calculate() {
     }
 
     let sgpa = document.getElementById("demo");
-    sgpa.textContent = "Your sgpa:- " + (sum / 25).toFixed(2) + "  Back:- " + backlog;
+    sgpa.textContent = "Your sgpa:- " + (sum / 25).toFixed(1) + "  Back:- " + backlog;
 
     
     sum = 0;
