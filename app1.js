@@ -346,7 +346,7 @@ function calculate() {
     // ************************************/
 
     let sgpa = document.getElementById("demo");
-    sgpa.innerText = "Your sgpa:- " + (sum / 22).toFixed(2) + "  Back:- " + backlog;
+    sgpa.innerText = "Your sgpa:- " + (sum / 22).toFixed(1) + "  Back:- " + backlog;
 
     sum = 0;
     backlog = 0;
