@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <title>SGPA Calculator</title>
 </head>
-
 <body>
-
     <div class="container">
-        <div class="main-heading">
+        <div class="heading">
             <h2>Grade Calculator (V)</h2>
         </div>
         <div class="main-content">
@@ -60,7 +57,7 @@
                 </select>
             </div>
             <div class="control">
-                <label for="SET">Software Engineering Testing</label>
+                <label for="SET">Software Eng. Testing</label>
                 <select id="SET" oninput="grading4(this.value)">
                     <option disabled selected hidden>Select grade</option>
                     <option value="A++">A++</option>
@@ -88,7 +85,7 @@
                 </select>
             </div>
             <div class="control">
-                <label for="ERP">Enterprise Resource Planning</label>
+                <label for="ERP">Enterprise Res. Planning</label>
                 <select id="ERP" oninput="grading6(this.value)">
                     <option disabled selected hidden>Select grade</option>
                     <option value="A++">A++</option>
@@ -102,7 +99,7 @@
                 </select>
             </div>
             <div class="control">
-                <label for="L-CA">Lab-Computer Algorithm</label>
+                <label for="L-CA">Lab - Computer Algorithm</label>
                 <select id="L-CA" oninput="grading7(this.value)">
                     <option disabled selected hidden>Select grade</option>
                     <option value="A++">A++</option>
@@ -116,7 +113,7 @@
                 </select>
             </div>
             <div class="control">
-                <label for="L-OS">Lab-Operating System</label>
+                <label for="L-OS">Lab - Operating System</label>
                 <select id="L-OS" oninput="grading8(this.value)">
                     <option disabled selected hidden>Select grade</option>
                     <option value="A++">A++</option>
@@ -130,7 +127,7 @@
                 </select>
             </div>
             <div class="control">
-                <label for="L-SET">Lab-Software Engineering Testing</label>
+                <label for="L-SET">Lab - Software Eng. Testing</label>
                 <select id="L-SET" oninput="grading9(this.value)">
                     <option disabled selected hidden>Select grade</option>
                     <option value="A++">A++</option>
@@ -158,7 +155,7 @@
                 </select>
             </div>
             <div class="control">
-                <label for="L-OS1">Lab-Open Source</label>
+                <label for="L-OS1">Lab - Open Source</label>
                 <select id="L-OS1" oninput="grading11(this.value)">
                     <option disabled selected hidden>Select grade</option>
                     <option value="A++">A++</option>
@@ -171,19 +168,16 @@
                     <option value="D">D</option>
                 </select>
             </div>
-            <div class="button-area">
-                <button id="btn" onclick="calculate()">Calculate</button>
-            </div>
-
-            <div class="final">
-                <h2 id="demo"></h2>
-            </div>
-            <br>
-            <br>
-    
         </div>
+        <div class="button-area">
+            <button id="btn" onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="final">
+            <h2 id="demo"></h2>
+        </div>
+    </div>
     
     <script src="app.js"></script>
 </body>
-
 </html>
