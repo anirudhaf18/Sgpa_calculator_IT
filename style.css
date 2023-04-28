@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(sgpa.jpg) center center/ cover;
+    background-image: linear-gradient(to right, #00b09b, #96c93d);
     color: white;
 }
 
