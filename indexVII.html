@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SGPA Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Grade Calculator (VII)</h2>
+        </div>
+        <div class="main-content">
+            <div class="control">
+                <label for="DM">Data Mining</label>
+                <select id="DM" oninput="grading1(this.value)">
+                    <option disabled selected hidden>Select grade</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="control">
+                <label for="IP">Image Processing</label>
+                <select id="IP" oninput="grading2(this.value)">
+                    <option disabled selected hidden>Select grade</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="control">
+                <label for="SC">Soft Computing</label>
+                <select id="SC" oninput="grading3(this.value)">
+                    <option disabled selected hidden>Select grade</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="control">
+                <label for="CC">Cloud Computing</label>
+                <select id="CC" oninput="grading4(this.value)">
+                    <option disabled selected hidden>Select grade</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="control">
+                <label for="PP">Project part - I</label>
+                <select id="PP" oninput="grading5(this.value)">
+                    <option disabled selected hidden>Select grade</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="control">
+                <label for="L-DM">Lab - Data Mining</label>
+                <select id="L-DM" oninput="grading6(this.value)">
+                    <option disabled selected hidden>Select grade</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="control">
+                <label for="L-IP">Lab - Image Processing</label>
+                <select id="L-IP" oninput="grading7(this.value)">
+                    <option disabled selected hidden>Select grade</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="control">
+                <label for="L-SC">Lab - Soft Computing</label>
+                <select id="L-SC" oninput="grading8(this.value)">
+                    <option disabled selected hidden>Select grade</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="control">
+                <label for="L-CC">Lab - Cloud Computing</label>
+                <select id="L-CC" oninput="grading9(this.value)">
+                    <option disabled selected hidden>Select grade</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+        </div>
+        <div class="button-area">
+            <button id="btn" onclick="calculate1()">Calculate</button>
+        </div>
+
+        <div class="final">
+            <h2 id="demo1"></h2>
+        </div>
+    </div>
+    
+    <script src="app4.js"></script>
+</body>
+</html>
